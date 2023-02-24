@@ -43,16 +43,16 @@ const Accordion = () => {
   };
 
   return (
-    <div className="h-20 flex flex-col flex-shrink-0 mt-32">
-      <h1 className="flex items-center justify-center text-[35px] font-bold tracking-wider uppercase">
+    <div className="h-20 flex flex-col flex-shrink-0 mt-28 lg:mt-14 lg:w-[355px] w-full lg:items-start ">
+      <h1 className="flex items-center justify-center text-[35px] font-bold tracking-wider uppercase lg:ml-[18px]">
         faq
       </h1>
-      <div className="text-black text-sm p-2 ">
+      <div className="text-black text-sm p-2  ">
         {faq.map((item, i) => (
           <div key={i}>
             <div
               onClick={() => toggle(i)}
-              className="cursor-pointer flex relative items-center justify-between p-3 h-15"
+              className="cursor-pointer flex relative items-center justify-between p-3 h-15 lg:h-14"
             >
               <h2
                 className={`text-[14px] ${
